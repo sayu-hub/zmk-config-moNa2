@@ -59,10 +59,10 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION  &kp DOLLAR  &kp LS(INT_YEN)          &kp CARET    &kp PLUS                                  &kp RIGHT_BRACE   &kp PIPE                  &kp LS(AT_SIGN)   &kp AMPERSAND  &kp PLUS
-&kp LEFT_BRACE   &kp LBKT    &kp LS(INTERNATIONAL_1)  &kp MINUS    &kp LS(MINUS)  &trans    &kp CARET        &kp LS(ASTERISK)  &kp LS(LEFT_PARENTHESIS)  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp AT_SIGN
-&trans           &trans      &kp EQUAL                &kp PERCENT  &kp HASH       &trans    &kp LS(INT_YEN)  &kp RBKT          &kp LEFT_BRACKET          &kp COMMA         &kp PERIOD     &kp QUESTION
-&trans           &trans      &trans                   &trans       &trans         &trans    &trans           &trans                                                                       &trans
+&kp EXCLAMATION       &kp DOLLAR     &kp LS(INT_YEN)          &kp CARET    &kp PLUS                                  &kp RIGHT_BRACE   &kp PIPE                  &kp LS(AT_SIGN)   &kp AMPERSAND  &kp LEFT_BRACE
+&kp LEFT_BRACE        &kp LBKT       &kp LS(INTERNATIONAL_1)  &kp MINUS    &kp LS(MINUS)  &trans    &kp CARET        &kp LS(ASTERISK)  &kp LS(LEFT_PARENTHESIS)  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp INT_YEN
+&trans                &trans         &kp EQUAL                &kp PERCENT  &kp HASH       &trans    &kp LS(INT_YEN)  &kp RBKT          &kp LEFT_BRACKET          &kp COMMA         &kp PERIOD     &kp QUESTION
+&kp NON_US_BACKSLASH  &kp BACKSLASH  &trans                   &trans       &trans         &trans    &trans           &trans                                                                       &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
