@@ -48,10 +48,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E            &kp R         &kp T                                                       &kp Y                &kp U    &kp I      &kp O      &kp P
-&kp A          &lt 3 S       &lt 2 D          &lt 1 F       &kp G                 &trans           &kp LANGUAGE_1       &kp H                &lt 1 J  &lt 2 K    &lt 3 L    &kp ENTER
-&kp Z          &kp X         &kp C            &kp V         &kp B                 &kp GRAVE        &kp LANGUAGE_2       &kp N                &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
-&kp LC(LCTRL)  &kp LEFT_WIN  &kp PRINTSCREEN  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &mt LCTRL DEL    &mt RIGHT_SHIFT TAB  &mt RCTRL BACKSPACE                                 &kp ESCAPE
+&kp Q          &kp W         &kp E            &kp R         &kp T                                                   &kp Y                &kp U    &kp I      &kp O      &kp P
+&kp A          &lt 3 S       &lt 2 D          &lt 1 F       &kp G                 &trans       &kp LANGUAGE_1       &kp H                &lt 1 J  &lt 2 K    &lt 3 L    &kp ENTER
+&kp Z          &kp X         &kp C            &kp V         &kp B                 &kp GRAVE    &kp LANGUAGE_2       &kp N                &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
+&kp LC(LCTRL)  &kp LEFT_WIN  &kp PRINTSCREEN  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 3 DEL    &mt RIGHT_SHIFT TAB  &mt RCTRL BACKSPACE                                 &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -81,10 +81,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                            &trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LANGUAGE_1  &kp LANGUAGE_2                                            &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
