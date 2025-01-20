@@ -48,10 +48,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E            &kp R         &kp T                                                   &kp Y                &kp U    &kp I      &kp O      &kp P
-&kp A          &lt 3 S       &lt 2 D          &lt 1 F       &kp G                 &trans       &none                &kp H                &lt 1 J  &lt 2 K    &lt 3 L    &kp ENTER
-&kp Z          &kp X         &kp C            &kp V         &kp B                 &none        &kp BACKSPACE        &kp N                &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
-&kp LC(LCTRL)  &kp LEFT_WIN  &kp PRINTSCREEN  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 3 DEL    &mt RIGHT_SHIFT TAB  &mt RCTRL BACKSPACE                                 &mt LA(LC(DEL)) ESCAPE
+&kp Q          &kp W         &kp E                    &kp R         &kp T                                                   &kp Y                &kp U    &kp I      &kp O      &kp P
+&kp A          &lt 3 S       &lt 2 D                  &lt 1 F       &kp G                 &trans       &none                &kp H                &lt 1 J  &lt 2 K    &lt 3 L    &kp ENTER
+&kp Z          &kp X         &kp C                    &kp V         &kp B                 &none        &kp BACKSPACE        &kp N                &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
+&kp LC(LCTRL)  &kp LEFT_WIN  &kp LG(LS(PRINTSCREEN))  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 3 DEL    &mt RIGHT_SHIFT TAB  &mt RCTRL BACKSPACE                                 &mt LA(LC(DEL)) ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -81,10 +81,10 @@
 
         layer_3 {
             bindings = <
-&none           &none         &none         &none         &none                                         &none           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
-&none           &none         &none         &none         &none         &none           &none           &none           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
-&none           &none         &none         &none         &none         &none           &none           &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
-&bt BT_CLR_ALL  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &kp LANGUAGE_1  &kp LANGUAGE_2                                            &none
+&none  &none         &none         &none         &none                                           &none           &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
+&none  &none         &none         &none         &none         &none             &none           &none           &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
+&none  &none         &none         &none         &none         &bt BT_CLR_ALL    &none           &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
+&none  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0      &kp LANGUAGE_1  &kp LANGUAGE_2                                            &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
