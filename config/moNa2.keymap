@@ -13,7 +13,15 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ctr+alt {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <39>;
+            layers = <2>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -43,6 +51,13 @@
             bindings = <&kp DELETE &kp DEL &kp DEL &kp DELETE>;
             label = "DELDELDELDEL";
         };
+
+        bkbkbkbk: bkbkbkbk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp BACKSPACE &kp BACKSPACE &kp BACKSPACE>;
+            label = "BKBKBKBK";
+        };
     };
 
     behaviors {
@@ -69,10 +84,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E          &kp R         &kp T                                                   &kp Y                &kp U    &kp I      &kp O      &kp P
-&kp A          &lt 3 S       &lt 2 D        &lt 1 F       &kp G                 &trans       &none                &kp H                &lt 1 J  &lt 2 K    &lt 3 L    &kp ENTER
-&kp Z          &kp X         &kp C          &kp V         &kp B                 &none        &deldeldeldel        &kp N                &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
-&kp LC(LCTRL)  &kp LEFT_WIN  &kp LG(LS(S))  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 3 DEL    &mt RIGHT_SHIFT TAB  &mt RCTRL BACKSPACE                                 &kp ESCAPE
+&kp Q          &kp W         &kp E          &kp R         &kp T                                                   &kp Y      &kp U    &kp I      &kp O      &kp P
+&kp A          &lt 3 S       &lt 2 D        &lt 1 F       &kp G                 &trans       &none                &kp H      &lt 1 J  &lt 2 K    &lt 3 L    &kp ENTER
+&kp Z          &kp X         &kp C          &kp V         &kp B                 &none        &deldeldeldel        &kp N      &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
+&kp LC(LCTRL)  &kp LEFT_WIN  &kp LG(LS(S))  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &lt 3 DEL    &mt RIGHT_SHIFT TAB  &kp RCTRL                                 &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -91,10 +106,10 @@
 
         layer_2 {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4  &kp F5                   &none     &none              &none         &none                  &none
-&kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &none    &none  &none     &leftleftleftleft  &kp UP_ARROW  &rightrightrightright  &none
-&kp F11  &none   &none   &none   &none    &none    &none  &kp HOME  &kp LEFT           &kp DOWN      &kp RIGHT              &kp END
-&kp F12  &none   &trans  &none   &none    &none    &none  &none                                                             &none
+&kp F1   &kp F2  &kp F3  &kp F4        &kp F5                                &none          &none              &none         &none                  &kp RC(Y)
+&kp F6   &kp F7  &kp F8  &kp F9        &kp F10         &none    &kp HOME     &bkbkbkbk      &leftleftleftleft  &kp UP_ARROW  &rightrightrightright  &deldeldeldel
+&kp F11  &none   &none   &none         &none           &none    &kp END      &kp BACKSPACE  &kp LEFT           &kp DOWN      &kp RIGHT              &kp DEL
+&kp F12  &none   &trans  &kp LEFT_ALT  &kp LEFT_SHIFT  &none    &kp RS(TAB)  &kp TAB                                                                &kp RC(Z)
             >;
 
             sensor-bindings = <&scroll_up_down>;
