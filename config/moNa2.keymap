@@ -19,7 +19,7 @@
         ctr+alt {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <39>;
-            layers = <2>;
+            layers = <1>;
         };
     };
 
@@ -92,6 +92,7 @@
 
             sensor-bindings = <&scroll_up_down>;
         };
+
         layer_1 {
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4        &kp F5                                &none          &kp HOME           &none         &kp END                &none
