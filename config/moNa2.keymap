@@ -19,7 +19,7 @@
         ctr+alt {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <39>;
-            ｂａｋｋｕｓｕｐｅs = <1>;
+            layers = <1>;
         };
     };
 
