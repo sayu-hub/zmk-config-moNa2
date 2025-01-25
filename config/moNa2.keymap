@@ -77,16 +77,14 @@
 
             tap-ms = <20>;
         };
-                // バックスペースキーのタップダンス設定
         backspace_tap_dance: behavior {
             compatible = "zmk,behavior-tap-dance";
             label = "Backspace Tap Dance";
-            // シングルクリック, ダブルクリック, トリプルクリックの動作を設定
+        
             bindings = <&kp BSPC>, <&macro_backspace_4>, <&macro_delete_to_start>;
-            tapping-term-ms = <200>;  // 200ms以内の押下をダブル/トリプルクリックと認識
+            tapping-term-ms = <200>;  
         };
 
-        // ダブルクリックで4文字削除
         macro_backspace_4: behavior {
             compatible = "zmk,behavior-macro";
             label = "Macro: Backspace 4 Times";
@@ -94,7 +92,6 @@
             macro-bindings = <&kp BSPC>, <&kp BSPC>, <&kp BSPC>, <&kp BSPC>;
         };
 
-        // トリプルクリックで文頭まで削除
         macro_delete_to_start: behavior {
             compatible = "zmk,behavior-macro";
             label = "Macro: Delete to Start";
