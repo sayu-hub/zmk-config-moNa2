@@ -95,10 +95,10 @@
 
         layer_1 {
             bindings = <
-&none  &kp LEFT_BRACKET   &kp EXCLAMATION          &kp DOLLAR   &kp PLUS                                 &kp RIGHT_BRACE   &kp PIPE                  &kp LS(AT_SIGN)   &kp AMPERSAND  &kp LEFT_BRACE
-&none  &kp COLON          &kp LS(INTERNATIONAL_1)  &kp MINUS    &kp LS(MINUS)  &none    &kp CARET        &kp LS(ASTERISK)  &kp LS(LEFT_PARENTHESIS)  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp INT_YEN
-&none  &kp DOUBLE_QUOTES  &kp EQUAL                &kp PERCENT  &kp HASH       &none    &kp LS(INT_YEN)  &kp RBKT          &kp BACKSLASH             &kp COMMA         &kp PERIOD     &kp QUESTION
-&none  &none              &none                    &none        &none          &none    &kp LESS_THAN    &kp GREATER_THAN                                                             &none
+&kp F1   &kp F2  &kp F3  &kp F4        &kp F5                                    &none          &kp HOME           &none         &kp END                &none
+&kp F6   &kp F7  &kp F8  &kp F9        &kp F10         &none        &kp LC(Y)    &bkbkbkbk      &leftleftleftleft  &kp UP_ARROW  &rightrightrightright  &deldeldeldel
+&kp F11  &none   &none   &none         &none           &none        &kp LC(Z)    &kp BACKSPACE  &kp LEFT           &kp DOWN      &kp RIGHT              &deldeldeldel
+&kp F12  &none   &trans  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL    &kp RS(TAB)  &kp TAB                                                                &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -106,10 +106,10 @@
 
         layer_2 {
             bindings = <
-&kp F1   &kp F2  &kp F3  &kp F4        &kp F5                                    &none          &kp HOME           &none         &kp END                &none
-&kp F6   &kp F7  &kp F8  &kp F9        &kp F10         &none        &kp LC(Y)    &bkbkbkbk      &leftleftleftleft  &kp UP_ARROW  &rightrightrightright  &deldeldeldel
-&kp F11  &none   &none   &none         &none           &none        &kp LC(Z)    &kp BACKSPACE  &kp LEFT           &kp DOWN      &kp RIGHT              &deldeldeldel
-&kp F12  &none   &trans  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL    &kp RS(TAB)  &kp TAB                                                                &none
+&none  &kp LEFT_BRACKET   &kp EXCLAMATION          &kp DOLLAR   &kp PLUS                                 &kp RIGHT_BRACE   &kp PIPE                  &kp LS(AT_SIGN)   &kp AMPERSAND  &kp LEFT_BRACE
+&none  &kp COLON          &kp LS(INTERNATIONAL_1)  &kp MINUS    &kp LS(MINUS)  &none    &kp CARET        &kp LS(ASTERISK)  &kp LS(LEFT_PARENTHESIS)  &kp SINGLE_QUOTE  &kp SEMICOLON  &kp INT_YEN
+&none  &kp DOUBLE_QUOTES  &kp EQUAL                &kp PERCENT  &kp HASH       &none    &kp LS(INT_YEN)  &kp RBKT          &kp BACKSLASH             &kp COMMA         &kp PERIOD     &kp QUESTION
+&none  &none              &none                    &none        &none          &none    &kp LESS_THAN    &kp GREATER_THAN                                                             &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
