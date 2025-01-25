@@ -19,7 +19,7 @@
         ctr+alt {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <39>;
-            layers = <1>;
+            ｂａｋｋｕｓｕｐｅs = <1>;
         };
     };
 
@@ -77,6 +77,30 @@
 
             tap-ms = <20>;
         };
+                // バックスペースキーのタップダンス設定
+        backspace_tap_dance: behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Backspace Tap Dance";
+            // シングルクリック, ダブルクリック, トリプルクリックの動作を設定
+            bindings = <&kp BSPC>, <&macro_backspace_4>, <&macro_delete_to_start>;
+            tapping-term-ms = <200>;  // 200ms以内の押下をダブル/トリプルクリックと認識
+        };
+
+        // ダブルクリックで4文字削除
+        macro_backspace_4: behavior {
+            compatible = "zmk,behavior-macro";
+            label = "Macro: Backspace 4 Times";
+            #binding-cells = <0>;
+            macro-bindings = <&kp BSPC>, <&kp BSPC>, <&kp BSPC>, <&kp BSPC>;
+        };
+
+        // トリプルクリックで文頭まで削除
+        macro_delete_to_start: behavior {
+            compatible = "zmk,behavior-macro";
+            label = "Macro: Delete to Start";
+            #binding-cells = <0>;
+            macro-bindings = <&kp LCTRL>, <&kp LSHIFT>, <&kp BSPC>;
+        };
     };
 
     keymap {
@@ -87,7 +111,7 @@
 &kp Q        &kp W         &kp E          &kp R         &kp T                                                            &kp Y                &kp U    &kp I      &kp O      &kp P
 &mt LCTRL A  &lt 3 S       &lt 2 D        &lt 1 F       &kp G        &trans                  &kp RS(TAB)                 &kp H                &lt 1 J  &lt 2 K    &lt 3 L    &mt RCTRL ENTER
 &kp Z        &kp X         &kp C          &kp V         &kp B        &kp LA(LC(DELETE))      &kp TAB                     &kp N                &kp M    &mkp LCLK  &mkp RCLK  &lt 5 SLASH
-&kp LCTRL    &kp LEFT_WIN  &kp LG(LS(S))  &kp LEFT_ALT  &lt 1 SPACE  &mt LCTRL LANGUAGE_1    &mt RIGHT_SHIFT LANGUAGE_2  &mt RCTRL BACKSPACE                                 &mt RIGHT_SHIFT ESCAPE
+&kp LCTRL    &kp LEFT_WIN  &kp LG(LS(S))  &kp LEFT_ALT  &lt 1 SPACE  &mt LCTRL LANGUAGE_1    &mt RIGHT_SHIFT LANGUAGE_2  &mt RCTRL backspace_tap_dance                                 &mt RIGHT_SHIFT ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -103,7 +127,7 @@
 
             sensor-bindings = <&scroll_up_down>;
         };
-        
+
         layer_2 {
             bindings = <
 &kp F1   &kp F2  &kp F3  &kp F4        &kp F5                                    &none          &kp HOME           &none         &kp END                &none
