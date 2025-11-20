@@ -85,7 +85,7 @@
             bindings = <
 &kp ESCAPE  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                    &kp RC(T)  &kp RC(RS(T))       &kp RS(RC(TAB))  &kp RC(TAB)          &kp HOME
 &kp TAB     &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END   &trans           &kp PAGE_UP    &kp HOME   &kp LA(LEFT_ARROW)  &kp UP_ARROW     &kp RA(RIGHT_ARROW)  &kp END
-&kp DEL     &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp HOME  &kp PAGE_DOWN    &kp PAGE_DOWN  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW   &kp RIGHT_ARROW      &kp PAGE_UP
+&kp DEL     &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &kp HOME  &kp PAGE_DOWN    &kp PAGE_DOWN  &kp END    &kp LEFT_ARROW      &kp DOWN_ARROW   &kp RIGHT_ARROW      &kp PAGE_UP
 &kp LSHFT   &trans                  &trans          &trans                   &trans    &trans           &trans         &trans                                                               &kp PAGE_DOWN
             >;
 
