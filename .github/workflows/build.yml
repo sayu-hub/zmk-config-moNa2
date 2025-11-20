@@ -2,33 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-
-    with:
-      config: config
-
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: sayu-hub
-      url-base: https://github.com/sayu-hub
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
-
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-
-    - name: zmk-pmw3610-driver
-      remote: sayu-hub
-      revision: main
-
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
-
-  self:
-    path: config
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.2.1
