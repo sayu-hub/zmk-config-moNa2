@@ -49,9 +49,9 @@
         default_layer {
             bindings = <
 &kp Q             &mt AT_SIGN W  &kp E         &kp R       &kp T                                      &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S          &kp D         &kp F       &kp G                       &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp A             &kp S          &kp D         &kp F       &kp G                       &kp TAB        &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X          &kp C         &kp V       &kp B        &lt 4 COLON    &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 3 CAPS        &kp LEFT_WIN   &kp LEFT_ALT  &kp LSHIFT  &lt 2 SPACE  &kp LCTRL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp CAPSLOCK      &kp LEFT_WIN   &kp LEFT_ALT  &kp LSHIFT  &lt 2 SPACE  &lt 3 LCTRL    &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -72,7 +72,7 @@
 
         layer_2 {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TILDE                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                   &kp CARET         &kp AMPERSAND      &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK               &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans       &trans          &trans                                                                     &kp PIPE
